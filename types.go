@@ -29,6 +29,7 @@ type ProductionDevice interface {
 type EnergySource interface {
 	ProductionDevice
 	Level4Description() string
+	CarbonContent() float32
 }
 
 type EnergyType struct {
